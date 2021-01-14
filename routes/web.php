@@ -36,3 +36,7 @@ Route::get('/contact', function () {
 Route::get('/welcome', function () {
     return view('welcome');
 });
+
+Route::get('/contact', 'ContactController@index');
+
+Route::post('/contact/send', 'ContactController@ContactRequest');

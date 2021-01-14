@@ -6,16 +6,18 @@
         <title>About</title>
     </head>
     <body>
-        <h1>about</h1>
+        @extends('layout')
+        @section('title', 'About')
+        <h1>About</h1>
         <ul>
             <li>
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="/about">about</a>
+                <a href="/about">About</a>
             </li>
             <li>
-                <a href="/work">work</a>
+                <a href="/work">Work</a>
             </li>
             <li>
                 <a href="/contact">Contact</a>

@@ -6,20 +6,20 @@
         <title>Contact</title>
     </head>
     <body>
-        <h1>contact</h1>
-        <ul>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/about">about</a>
-            </li>
-            <li>
-                <a href="/work">work</a>
-            </li>
-            <li>
-                <a href="/contact">Contact</a>
-            </li>
-        </ul>
+        @extends('layout') 
+        @section('title', 'Contact') 
+        @section('content')
+
+        <h1>Contact form</h1>
+
+        <div id="contact">
+            <form action="/contact/send" method="post">
+                @csrf
+                <input type="text" name="first_name" id="first_name" placeholder="first name">
+                <br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    @endsection
     </body>
 </html>

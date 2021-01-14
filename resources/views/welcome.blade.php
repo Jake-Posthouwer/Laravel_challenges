@@ -3,10 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Welcome</title>
     </head>
     <body>
-        @extends('layout') @section('content')
+        @extends('layout') 
+        @section('title', 'Welcome')
+        @section('content')
 
         <h1>Hello world!!!</h1>
 

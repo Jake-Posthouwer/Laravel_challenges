@@ -6,16 +6,17 @@
         <title>Home</title>
     </head>
     <body>
-        <h1>home</h1>
+        @section('title', 'Home')
+        <h1>Home</h1>
         <ul>
             <li>
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="/about">about</a>
+                <a href="/about">About</a>
             </li>
             <li>
-                <a href="/work">work</a>
+                <a href="/work">Work</a>
             </li>
             <li>
                 <a href="/contact">Contact</a>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Layout</title>
+        <title>@yield('title', 'Laravel pagina')</title>
     </head>
     <body>
 
@@ -12,10 +12,10 @@
                 <a href="/">Home</a>
             </li>
             <li>
-                <a href="/about">about</a>
+                <a href="/about">About</a>
             </li>
             <li>
-                <a href="/work">work</a>
+                <a href="/work">Work</a>
             </li>
             <li>
                 <a href="/contact">Contact</a>
